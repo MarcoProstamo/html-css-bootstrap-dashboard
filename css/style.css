@@ -1,0 +1,9 @@
+/* ! Nav Rules */
+.navbar-brand > img {
+  width: 4rem;
+  aspect-ratio: 1;
+}
+
+.navbar form input::placeholder {
+  color: var(--bs-light-bg-subtle) !important;
+}
