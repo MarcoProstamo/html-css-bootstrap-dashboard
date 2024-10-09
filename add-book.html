@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Dashboard</title>
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              src="./img/duck.png"
+              alt="Logo"
+              class="d-inline-block align-text-top"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between"
+            id="navbarSupportedContent"
+          >
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Catalogo Libri</a
+              >
+              <a class="nav-link" href="#">Anagrafica Utenti</a>
+              <a class="nav-link" href="#">Storico Prestiti</a>
+              <a class="nav-link" href="#">Help</a>
+            </div>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2 bg-light"
+                type="search"
+                placeholder="Cerca..."
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">Cerca</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <h1 class="fw-semibold my-5">Nuovo Libro</h1>
+        <div class="row">
+          <form class="row g-3">
+            <div class="col-6">
+              <label for="inputAuthorName" class="form-label"
+                >Nome Autore</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="inputAuthorName"
+                placeholder="Inserisci il nome dell'autore"
+              />
+            </div>
+            <div class="col-6">
+              <label for="inputAuthorSurname" class="form-label"
+                >Cognome Autore</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="inputAuthorSurname"
+                placeholder="Inserisci il cognome dell'autore"
+              />
+            </div>
+            <div class="col-12">
+              <label for="inputTitle" class="form-label">Titolo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputTitle"
+                placeholder="Inserisci il titolo del libro"
+              />
+            </div>
+            <div class="col-lg-4">
+              <label for="inputGenre" class="form-label">Genere</label>
+              <select id="inputGenre" class="form-select">
+                <option value="" selected>Scegli il genere</option>
+                <option>...</option>
+                <option>...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-lg-4">
+              <label for="inputPublishYear" class="form-label"
+                >Anno di Pubblicazione</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="inputPublishYear"
+                placeholder="Inserisci l'anno"
+              />
+            </div>
+            <div class="col-lg-4">
+              <label for="inputIsbn" class="form-label">ISBN#</label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputIsbn"
+                placeholder="Inserisci il codice ISBN#"
+              />
+            </div>
+
+            <div class="col-12">
+              <hr class="border border-secondary border-1" />
+            </div>
+
+            <div class="col-12">
+              <label for="inputTextArea" class="form-label">Note</label>
+              <textarea
+                class="form-control"
+                placeholder="Inserisci eventuali note sul libro"
+                id="inputTextArea"
+              ></textarea>
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <label class="form-check-label" for="inputDigitalAvaible">
+                  Disponibile anche in digitale
+                </label>
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="inputDigitalAvaible"
+                />
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">
+                Aggiungi Libro
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
